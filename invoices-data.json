@@ -1,0 +1,169 @@
+{
+  "invoice": [
+    {
+      "@number": "12384",
+      "@date": "January 19, 2021",
+      "patient": {
+        "@firstname": "Abdullah",
+        "@familyname": "Daqdoqa",
+        "@SSN": "123123123",
+        "phone": [
+          {
+            "@type": "home",
+            "@number": "06-123456"
+          },
+          {
+            "@type": "mobile",
+            "@number": "07-49001345"
+          }
+        ],
+        "address": {
+          "@type": "home",
+          "@line1": "2255 Street",
+          "@city": "Valbonne",
+          "@state": "",
+          "@zip": "06560"
+        }
+      },
+      "insurance": {
+        "@name": "Cigna Global",
+        "@plannumber": "A1",
+        "@planname": "First degree",
+        "phone": {
+          "@number": "099-987564321"
+        },
+        "address": {
+          "@type": "business",
+          "@line1": "1234 Street",
+          "@city": "Nice",
+          "@state": "Alpes-Maritimes",
+          "@zip": "06123"
+        }
+      },
+      "procedure": [
+        {
+          "@code": "115",
+          "@name": "Cleaning ears",
+          "@cost": "50.00",
+          "@insurance_estimate": "50.00"
+        },
+        {
+          "@code": "161",
+          "@name": "Breaces checkup",
+          "@cost": "100.00",
+          "@insurance_estimate": "80.00"
+        },
+        {
+          "@code": "120",
+          "@name": "Acne teatment",
+          "@cost": "80.00",
+          "@insurance_estimate": "60.00"
+        }
+      ]
+    },
+    {
+      "@number": "12385",
+      "@date": "January 19, 2021",
+      "patient": {
+        "@firstname": "Jack",
+        "@familyname": "Blanc",
+        "@SSN": "123456765",
+        "phone": {
+          "@type": "home",
+          "@number": "123-4562245"
+        },
+        "address": {
+          "@type": "home",
+          "@line1": "123 Street",
+          "@city": "Paris",
+          "@state": "Île-de-France",
+          "@zip": "12343"
+        }
+      },
+      "insurance": {
+        "@name": "April International",
+        "@plannumber": "3455",
+        "@planname": "Second degree full package",
+        "phone": {
+          "@number": "064-87654321"
+        },
+        "address": {
+          "@type": "business",
+          "@line1": "1234 Street",
+          "@city": "Paris",
+          "@state": "Île-de-France",
+          "@zip": "54321"
+        }
+      },
+      "procedure": [
+        {
+          "@code": "168",
+          "@name": "Teeth removal",
+          "@cost": "100.00",
+          "@insurance_estimate": "70.00"
+        },
+        {
+          "@code": "256",
+          "@name": "Eyes checkup",
+          "@cost": "45.00",
+          "@insurance_estimate": "45.00"
+        }
+      ]
+    },
+    {
+      "@number": "12386",
+      "@date": "January 19, 2021",
+      "patient": {
+        "@firstname": "Sarah",
+        "@familyname": "Francois",
+        "@SSN": "123456345",
+        "phone": {
+          "@type": "home",
+          "@number": "876-31654891"
+        },
+        "address": {
+          "@type": "home",
+          "@line1": "9982 Street",
+          "@city": "Lyon",
+          "@state": "Auvergne-Rhône-Alpes",
+          "@zip": "42145"
+        }
+      },
+      "insurance": {
+        "@name": "Foyer Global Health",
+        "@plannumber": "12345",
+        "@planname": "Third dgree for minors",
+        "phone": {
+          "@number": "168-98756541"
+        },
+        "address": {
+          "@type": "business",
+          "@line1": "6579 Street",
+          "@city": "Lyon",
+          "@state": "Auvergne-Rhône-Alpes",
+          "@zip": "468130"
+        }
+      },
+      "procedure": [
+        {
+          "@code": "684",
+          "@name": "Diabetes treatment",
+          "@cost": "60.00",
+          "@insurance_estimate": "40.00"
+        },
+        {
+          "@code": "3356",
+          "@name": "flu treatment",
+          "@cost": "85.00",
+          "@insurance_estimate": "85.00"
+        },
+        {
+          "@code": "3356",
+          "@name": "Annual checkup",
+          "@cost": "100.00",
+          "@insurance_estimate": "160.00"
+        }
+      ]
+    }
+  ]
+}

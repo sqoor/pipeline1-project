@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="invoices">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" name="invoice">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="patient">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element maxOccurs="unbounded" name="phone">
+                      <xs:complexType>
+                        <xs:attribute name="type" type="xs:string" use="required" />
+                        <xs:attribute name="number" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="address">
+                      <xs:complexType>
+                        <xs:attribute name="type" type="xs:string" use="required" />
+                        <xs:attribute name="line1" type="xs:string" use="required" />
+                        <xs:attribute name="city" type="xs:string" use="required" />
+                        <xs:attribute name="state" type="xs:string" use="required" />
+                        <xs:attribute name="zip" type="xs:unsignedShort" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="firstname" type="xs:string" use="required" />
+                  <xs:attribute name="familyname" type="xs:string" use="required" />
+                  <xs:attribute name="SSN" type="xs:unsignedInt" use="required" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="insurance">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="phone">
+                      <xs:complexType>
+                        <xs:attribute name="number" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="address">
+                      <xs:complexType>
+                        <xs:attribute name="type" type="xs:string" use="required" />
+                        <xs:attribute name="line1" type="xs:string" use="required" />
+                        <xs:attribute name="city" type="xs:string" use="required" />
+                        <xs:attribute name="state" type="xs:string" use="required" />
+                        <xs:attribute name="zip" type="xs:unsignedInt" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="name" type="xs:string" use="required" />
+                  <xs:attribute name="plannumber" type="xs:string" use="required" />
+                  <xs:attribute name="planname" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element maxOccurs="unbounded" name="procedure">
+                <xs:complexType>
+                  <xs:attribute name="code" type="xs:unsignedShort" use="required" />
+                  <xs:attribute name="name" type="xs:string" use="required" />
+                  <xs:attribute name="cost" type="xs:decimal" use="required" />
+                  <xs:attribute name="insurance_estimate" type="xs:decimal" use="required" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element minOccurs="0" name="man">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="cat" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="number" type="xs:unsignedShort" use="required" />
+            <xs:attribute name="date" type="xs:string" use="required" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

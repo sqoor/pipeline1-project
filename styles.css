@@ -1,0 +1,22 @@
+body {
+  background-color: rgb(128, 163, 163);
+}
+body > p {
+  padding: 5px;
+}
+table {
+  border: 1px solid black;
+  width: 100%;
+}
+table caption {
+  text-align: left;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+th,
+td {
+  border: 1px solid black;
+  width: 15%;
+  text-align: center
+}

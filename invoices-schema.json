@@ -1,0 +1,653 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+      "invoice": {
+        "type": "array",
+        "items": [
+          {
+            "type": "object",
+            "properties": {
+              "@number": {
+                "type": "string"
+              },
+              "@date": {
+                "type": "string"
+              },
+              "patient": {
+                "type": "object",
+                "properties": {
+                  "@firstname": {
+                    "type": "string"
+                  },
+                  "@familyname": {
+                    "type": "string"
+                  },
+                  "@SSN": {
+                    "type": "string"
+                  },
+                  "phone": {
+                    "type": "array",
+                    "items": [
+                      {
+                        "type": "object",
+                        "properties": {
+                          "@type": {
+                            "type": "string"
+                          },
+                          "@number": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "@type",
+                          "@number"
+                        ]
+                      },
+                      {
+                        "type": "object",
+                        "properties": {
+                          "@type": {
+                            "type": "string"
+                          },
+                          "@number": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "@type",
+                          "@number"
+                        ]
+                      }
+                    ]
+                  },
+                  "address": {
+                    "type": "object",
+                    "properties": {
+                      "@type": {
+                        "type": "string"
+                      },
+                      "@line1": {
+                        "type": "string"
+                      },
+                      "@city": {
+                        "type": "string"
+                      },
+                      "@state": {
+                        "type": "string"
+                      },
+                      "@zip": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "@type",
+                      "@line1",
+                      "@city",
+                      "@state",
+                      "@zip"
+                    ]
+                  }
+                },
+                "required": [
+                  "@firstname",
+                  "@familyname",
+                  "@SSN",
+                  "phone",
+                  "address"
+                ]
+              },
+              "insurance": {
+                "type": "object",
+                "properties": {
+                  "@name": {
+                    "type": "string"
+                  },
+                  "@plannumber": {
+                    "type": "string"
+                  },
+                  "@planname": {
+                    "type": "string"
+                  },
+                  "phone": {
+                    "type": "object",
+                    "properties": {
+                      "@number": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "@number"
+                    ]
+                  },
+                  "address": {
+                    "type": "object",
+                    "properties": {
+                      "@type": {
+                        "type": "string"
+                      },
+                      "@line1": {
+                        "type": "string"
+                      },
+                      "@city": {
+                        "type": "string"
+                      },
+                      "@state": {
+                        "type": "string"
+                      },
+                      "@zip": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "@type",
+                      "@line1",
+                      "@city",
+                      "@state",
+                      "@zip"
+                    ]
+                  }
+                },
+                "required": [
+                  "@name",
+                  "@plannumber",
+                  "@planname",
+                  "phone",
+                  "address"
+                ]
+              },
+              "procedure": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "@code": {
+                        "type": "string"
+                      },
+                      "@name": {
+                        "type": "string"
+                      },
+                      "@cost": {
+                        "type": "string"
+                      },
+                      "@insurance_estimate": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "@code",
+                      "@name",
+                      "@cost",
+                      "@insurance_estimate"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "@code": {
+                        "type": "string"
+                      },
+                      "@name": {
+                        "type": "string"
+                      },
+                      "@cost": {
+                        "type": "string"
+                      },
+                      "@insurance_estimate": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "@code",
+                      "@name",
+                      "@cost",
+                      "@insurance_estimate"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "@code": {
+                        "type": "string"
+                      },
+                      "@name": {
+                        "type": "string"
+                      },
+                      "@cost": {
+                        "type": "string"
+                      },
+                      "@insurance_estimate": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "@code",
+                      "@name",
+                      "@cost",
+                      "@insurance_estimate"
+                    ]
+                  }
+                ]
+              }
+            },
+            "required": [
+              "@number",
+              "@date",
+              "patient",
+              "insurance",
+              "procedure"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "@number": {
+                "type": "string"
+              },
+              "@date": {
+                "type": "string"
+              },
+              "patient": {
+                "type": "object",
+                "properties": {
+                  "@firstname": {
+                    "type": "string"
+                  },
+                  "@familyname": {
+                    "type": "string"
+                  },
+                  "@SSN": {
+                    "type": "string"
+                  },
+                  "phone": {
+                    "type": "object",
+                    "properties": {
+                      "@type": {
+                        "type": "string"
+                      },
+                      "@number": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "@type",
+                      "@number"
+                    ]
+                  },
+                  "address": {
+                    "type": "object",
+                    "properties": {
+                      "@type": {
+                        "type": "string"
+                      },
+                      "@line1": {
+                        "type": "string"
+                      },
+                      "@city": {
+                        "type": "string"
+                      },
+                      "@state": {
+                        "type": "string"
+                      },
+                      "@zip": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "@type",
+                      "@line1",
+                      "@city",
+                      "@state",
+                      "@zip"
+                    ]
+                  }
+                },
+                "required": [
+                  "@firstname",
+                  "@familyname",
+                  "@SSN",
+                  "phone",
+                  "address"
+                ]
+              },
+              "insurance": {
+                "type": "object",
+                "properties": {
+                  "@name": {
+                    "type": "string"
+                  },
+                  "@plannumber": {
+                    "type": "string"
+                  },
+                  "@planname": {
+                    "type": "string"
+                  },
+                  "phone": {
+                    "type": "object",
+                    "properties": {
+                      "@number": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "@number"
+                    ]
+                  },
+                  "address": {
+                    "type": "object",
+                    "properties": {
+                      "@type": {
+                        "type": "string"
+                      },
+                      "@line1": {
+                        "type": "string"
+                      },
+                      "@city": {
+                        "type": "string"
+                      },
+                      "@state": {
+                        "type": "string"
+                      },
+                      "@zip": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "@type",
+                      "@line1",
+                      "@city",
+                      "@state",
+                      "@zip"
+                    ]
+                  }
+                },
+                "required": [
+                  "@name",
+                  "@plannumber",
+                  "@planname",
+                  "phone",
+                  "address"
+                ]
+              },
+              "procedure": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "@code": {
+                        "type": "string"
+                      },
+                      "@name": {
+                        "type": "string"
+                      },
+                      "@cost": {
+                        "type": "string"
+                      },
+                      "@insurance_estimate": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "@code",
+                      "@name",
+                      "@cost",
+                      "@insurance_estimate"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "@code": {
+                        "type": "string"
+                      },
+                      "@name": {
+                        "type": "string"
+                      },
+                      "@cost": {
+                        "type": "string"
+                      },
+                      "@insurance_estimate": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "@code",
+                      "@name",
+                      "@cost",
+                      "@insurance_estimate"
+                    ]
+                  }
+                ]
+              }
+            },
+            "required": [
+              "@number",
+              "@date",
+              "patient",
+              "insurance",
+              "procedure"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "@number": {
+                "type": "string"
+              },
+              "@date": {
+                "type": "string"
+              },
+              "patient": {
+                "type": "object",
+                "properties": {
+                  "@firstname": {
+                    "type": "string"
+                  },
+                  "@familyname": {
+                    "type": "string"
+                  },
+                  "@SSN": {
+                    "type": "string"
+                  },
+                  "phone": {
+                    "type": "object",
+                    "properties": {
+                      "@type": {
+                        "type": "string"
+                      },
+                      "@number": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "@type",
+                      "@number"
+                    ]
+                  },
+                  "address": {
+                    "type": "object",
+                    "properties": {
+                      "@type": {
+                        "type": "string"
+                      },
+                      "@line1": {
+                        "type": "string"
+                      },
+                      "@city": {
+                        "type": "string"
+                      },
+                      "@state": {
+                        "type": "string"
+                      },
+                      "@zip": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "@type",
+                      "@line1",
+                      "@city",
+                      "@state",
+                      "@zip"
+                    ]
+                  }
+                },
+                "required": [
+                  "@firstname",
+                  "@familyname",
+                  "@SSN",
+                  "phone",
+                  "address"
+                ]
+              },
+              "insurance": {
+                "type": "object",
+                "properties": {
+                  "@name": {
+                    "type": "string"
+                  },
+                  "@plannumber": {
+                    "type": "string"
+                  },
+                  "@planname": {
+                    "type": "string"
+                  },
+                  "phone": {
+                    "type": "object",
+                    "properties": {
+                      "@number": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "@number"
+                    ]
+                  },
+                  "address": {
+                    "type": "object",
+                    "properties": {
+                      "@type": {
+                        "type": "string"
+                      },
+                      "@line1": {
+                        "type": "string"
+                      },
+                      "@city": {
+                        "type": "string"
+                      },
+                      "@state": {
+                        "type": "string"
+                      },
+                      "@zip": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "@type",
+                      "@line1",
+                      "@city",
+                      "@state",
+                      "@zip"
+                    ]
+                  }
+                },
+                "required": [
+                  "@name",
+                  "@plannumber",
+                  "@planname",
+                  "phone",
+                  "address"
+                ]
+              },
+              "procedure": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "@code": {
+                        "type": "string"
+                      },
+                      "@name": {
+                        "type": "string"
+                      },
+                      "@cost": {
+                        "type": "string"
+                      },
+                      "@insurance_estimate": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "@code",
+                      "@name",
+                      "@cost",
+                      "@insurance_estimate"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "@code": {
+                        "type": "string"
+                      },
+                      "@name": {
+                        "type": "string"
+                      },
+                      "@cost": {
+                        "type": "string"
+                      },
+                      "@insurance_estimate": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "@code",
+                      "@name",
+                      "@cost",
+                      "@insurance_estimate"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "@code": {
+                        "type": "string"
+                      },
+                      "@name": {
+                        "type": "string"
+                      },
+                      "@cost": {
+                        "type": "string"
+                      },
+                      "@insurance_estimate": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "@code",
+                      "@name",
+                      "@cost",
+                      "@insurance_estimate"
+                    ]
+                  }
+                ]
+              }
+            },
+            "required": [
+              "@number",
+              "@date",
+              "patient",
+              "insurance",
+              "procedure"
+            ]
+          }
+        ]
+      }
+    },
+    "required": [
+      "invoice"
+    ]
+  }
